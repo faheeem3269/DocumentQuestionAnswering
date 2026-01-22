@@ -70,7 +70,7 @@ def StartQA(question: str):
         #print("Step3")
         # Combine content into a single prompt
         context = "\n\n".join([doc.page_content for doc in docs]) 
-        llm = ChatGroq(model_name="openai/gpt-oss-120b", api_key=os.getenv("GROQ_API_KEY"))
+        llm = ChatGroq(model_name="openai/gpt-oss-120b", api_key="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")
         prompt=ChatPromptTemplate.from_template(
         """
         Answer the questions based on the provided context only.
